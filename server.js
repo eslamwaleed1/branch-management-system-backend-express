@@ -13,9 +13,22 @@ import "./server/utils/refreshDatabase.js"
 
 
 const app = express();
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://branch-management-system-74s7vla8w-eslamwaleed1s-projects.vercel.app'
+];
+
 app.use(cors({
-	origin: "http://localhost:5173",
+  origin: function (origin, callback) {
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.indexOf(origin) === -1) {
+      const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
+      return callback(new Error(msg), false);
+    }
+    return callback(null, true);
+  }
 }));
+
 app.use(express.json());
 app.use("/api/employees", employeeRoutes);
 app.use("/api/products", productRoutes);
