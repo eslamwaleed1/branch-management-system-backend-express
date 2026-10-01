@@ -15,7 +15,7 @@ import "./server/utils/refreshDatabase.js"
 const app = express();
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://branch-management-system-74s7vla8w-eslamwaleed1s-projects.vercel.app'
+  'https://branch-management-system-cw8hqrbf0-eslamwaleed1s-projects.vercel.app/'
 ];
 
 app.use(cors({
