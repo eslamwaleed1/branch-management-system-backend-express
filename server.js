@@ -1,5 +1,5 @@
 import express from "express";
-import cors from "cors"; 
+import cors from "cors";
 import mongoose from "mongoose";
 import "dotenv/config";
 import employeeRoutes from "./server/routes/employeeRoutes.js";
@@ -7,28 +7,28 @@ import productRoutes from "./server/routes/productRoutes.js";
 import clientRoutes from "./server/routes/clientRoutes.js";
 import saleRoutes from "./server/routes/saleRoutes.js";
 import branchRoutes from "./server/routes/branchRoutes.js";
-import "./server/utils/refreshDatabase.js"
-
-
-
+import "./server/utils/refreshDatabase.js";
 
 const app = express();
-const allowedOrigins = [
-  'http://localhost:5173',
-  'https://branch-management-system-f28xadycv-eslamwaleed1s-projects.vercel.app'
-];
+const allowedOrigins = ["http://localhost:5173"];
+const allowedProductionOriginPrefix = "https://branch-management-system-";
 
-app.use(cors({
-  origin: function (origin, callback) {
-    if (!origin) return callback(null, true);
-    if (allowedOrigins.indexOf(origin) === -1) {
-      const msg = 'The CORS policy for this site does not allow access from the specified Origin.';
-      return callback(new Error(msg), false);
-    }
-    return callback(null, true);
-  }
-}));
-
+app.use(
+	cors({
+		origin: function (origin, callback) {
+			if (!origin) return callback(null, true);
+			const isAllowedOrigin =
+				allowedOrigins.includes(origin) ||
+				origin.startsWith(allowedProductionOriginPrefix);
+			if (!isAllowedOrigin) {
+				const msg =
+					"The CORS policy for this site does not allow access from the specified Origin.";
+				return callback(new Error(msg), false);
+			}
+			return callback(null, true);
+		},
+	}),
+);
 app.use(express.json());
 app.use("/api/employees", employeeRoutes);
 app.use("/api/products", productRoutes);

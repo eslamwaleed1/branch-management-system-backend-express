@@ -50,14 +50,14 @@ The API listens on `http://localhost:5000` by default. `GET /api/test` is a basi
 
 All routes are prefixed with `/api` and use JSON request and response bodies.
 
-| Resource | Base path | Available operations |
-| --- | --- | --- |
-| Branches | `/branches` | List, create, retrieve by ID or name, update, delete |
-| Employees | `/employees` | List, create, retrieve by ID, update, delete |
-| Clients | `/clients` | List, create, retrieve by ID, update, delete |
-| Products and inventory | `/products` | List, create, retrieve by ID, update, delete |
-| Sales | `/sales` | List, create, retrieve by ID, update sale date, delete |
-| Health check | `/test` | Check API availability |
+| Resource               | Base path    | Available operations                                   |
+| ---------------------- | ------------ | ------------------------------------------------------ |
+| Branches               | `/branches`  | List, create, retrieve by ID or name, update, delete   |
+| Employees              | `/employees` | List, create, retrieve by ID, update, delete           |
+| Clients                | `/clients`   | List, create, retrieve by ID, update, delete           |
+| Products and inventory | `/products`  | List, create, retrieve by ID, update, delete           |
+| Sales                  | `/sales`     | List, create, retrieve by ID, update sale date, delete |
+| Health check           | `/test`      | Check API availability                                 |
 
 For example, `GET /api/branches` lists branches and `POST /api/sales` creates a sale. Sales require an employee, a client in the same branch, and available inventory for each requested product. Sale line items cannot be edited; delete the sale and create a replacement instead.
 
