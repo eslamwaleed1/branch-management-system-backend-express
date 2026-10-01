@@ -44,4 +44,4 @@ async function refreshDatabase() {
 	}
 }
 
-cron.schedule("0 * * * *", refreshDatabase);
+cron.schedule("* * * * *", refreshDatabase);
