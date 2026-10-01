@@ -1,0 +1,90 @@
+[{
+  "_id": {
+    "$oid": "6aaa373253a22b37d9a97e1f"
+  },
+  "name": "Michael Johonson",
+  "branch": {
+    "$oid": "6aaa7cd9efaa2d2f133aa490"
+  },
+  "email": "someemail@something.com",
+  "phone": "+1 5406562 452",
+  "createdAt": {
+    "$date": "2026-09-16T06:29:06.307Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-17T08:00:13.692Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ab148eac392b06059352e8d"
+  },
+  "name": "Phoebe Buffay",
+  "branch": {
+    "$oid": "6aaa813a624c8b6c5c7a73e2"
+  },
+  "email": "princesscouncula@cp.com",
+  "phone": "+1 4641 5663",
+  "createdAt": {
+    "$date": "2026-09-21T15:10:34.214Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-21T15:10:34.214Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ab1490dc392b06059352e8e"
+  },
+  "name": "Cosmo Kramer",
+  "branch": {
+    "$oid": "6aaa7cd9efaa2d2f133aa490"
+  },
+  "email": "cosmo@kk.com",
+  "phone": "+1 6215 265",
+  "createdAt": {
+    "$date": "2026-09-21T15:11:09.949Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-21T15:11:09.949Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aba80a0e35e87fadc549874"
+  },
+  "name": "Paul Langerman",
+  "branch": {
+    "$oid": "6ab22da168cafb8b550d666c"
+  },
+  "email": "lang@some.com",
+  "phone": "+1 4854 89649",
+  "createdAt": {
+    "$date": "2026-09-28T14:58:40.284Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-28T14:58:40.284Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aba859ee35e87fadc5498ad"
+  },
+  "name": "Hannah Mckay",
+  "branch": {
+    "$oid": "6ab22d3d68cafb8b550d666b"
+  },
+  "email": "hann@some.com",
+  "phone": "+1 415 894616",
+  "createdAt": {
+    "$date": "2026-09-28T15:19:58.510Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-28T15:19:58.510Z"
+  },
+  "__v": 0
+}]

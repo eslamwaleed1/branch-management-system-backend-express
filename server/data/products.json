@@ -1,0 +1,56 @@
+[{
+  "_id": {
+    "$oid": "6aaa7e1689520e648dff9f9e"
+  },
+  "name": "White Paper",
+  "category": "Stationary",
+  "createdAt": {
+    "$date": "2026-09-16T11:31:34.440Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-17T08:40:06.146Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ab14a98c392b06059352e98"
+  },
+  "name": "Black Paper",
+  "category": "Stationary",
+  "createdAt": {
+    "$date": "2026-09-21T15:17:44.963Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-21T15:17:44.963Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aba80f4e35e87fadc549877"
+  },
+  "name": "Orange Paper",
+  "category": "Stationary",
+  "createdAt": {
+    "$date": "2026-09-28T15:00:04.295Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-28T15:00:04.295Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6abb716881e7b6fa9a0c8643"
+  },
+  "name": "Purple Paper",
+  "category": "Stationary",
+  "createdAt": {
+    "$date": "2026-09-29T08:06:00.071Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-29T08:06:00.071Z"
+  },
+  "__v": 0
+}]

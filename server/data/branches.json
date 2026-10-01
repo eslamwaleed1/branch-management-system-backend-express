@@ -1,0 +1,87 @@
+[{
+  "_id": {
+    "$oid": "6aaa813a624c8b6c5c7a73e2"
+  },
+  "name": "Stamford",
+  "manager": {
+    "$oid": "6aaa370c53a22b37d9a97e1e"
+  },
+  "location": "Stamford, Connecticut",
+  "phone": "+1 1616 165",
+  "createdAt": {
+    "$date": "2026-09-16T11:44:58.052Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-16T11:44:58.052Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6aaa7cd9efaa2d2f133aa490"
+  },
+  "name": "Scranton",
+  "manager": {
+    "$oid": "6aa7c481f92190e2b769b0d8"
+  },
+  "location": "Scranton, Pennsylvania",
+  "phone": "+1 5716 516",
+  "createdAt": {
+    "$date": "2026-09-16T11:26:17.479Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-16T11:26:17.479Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6ab22d3d68cafb8b550d666b"
+  },
+  "name": "Miami",
+  "location": "Miami, Florida",
+  "phone": "+1 48964 651",
+  "createdAt": {
+    "$date": "2026-09-22T07:24:45.391Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-22T07:24:45.391Z"
+  },
+  "__v": 0,
+  "manager": {
+    "$oid": "6ab512edb69c0ac381d39152"
+  }
+},
+{
+  "_id": {
+    "$oid": "6ab22da168cafb8b550d666c"
+  },
+  "name": "Pittsburgh",
+  "location": "Pittsburgh, Pennsylvania",
+  "phone": "+1 48964 651",
+  "createdAt": {
+    "$date": "2026-09-22T07:26:25.584Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-22T07:26:25.584Z"
+  },
+  "__v": 0,
+  "manager": {
+    "$oid": "6ab512f4b69c0ac381d39153"
+  }
+},
+{
+  "_id": {
+    "$oid": "6abb713b81e7b6fa9a0c863b"
+  },
+  "name": "Utica",
+  "location": "Utica, New York",
+  "phone": "+1 849615 8964",
+  "createdAt": {
+    "$date": "2026-09-29T08:05:15.653Z"
+  },
+  "updatedAt": {
+    "$date": "2026-09-29T08:05:15.653Z"
+  },
+  "__v": 0
+}]
