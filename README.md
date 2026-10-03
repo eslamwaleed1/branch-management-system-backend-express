@@ -8,7 +8,6 @@ Express and MongoDB backend for the Branch Management System React application. 
 - MongoDB persistence through Mongoose
 - Branch, employee, client, product, inventory and sales management
 - Inventory reservation and restoration when sales are created or deleted
-- JSON seed data for the included sample dataset
 
 ## Requirements
 
@@ -78,4 +77,4 @@ The API currently allows browser requests only from `http://localhost:5173` in `
 
 ## Important data behavior
 
-The server schedules `refreshDatabase` to run at the top of every hour. That job deletes all documents in the six application collections and repopulates them from the JSON files in `server/data`. Changes made through the API are therefore temporary and will be discarded on the next run. Disable or replace this scheduled reset before using a persistent or production Atlas database.
+The backend does not run a scheduled JSON-based database refresh. Any refresh or reset policy is managed by the database environment.

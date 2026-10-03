@@ -7,7 +7,6 @@ import productRoutes from "./server/routes/productRoutes.js";
 import clientRoutes from "./server/routes/clientRoutes.js";
 import saleRoutes from "./server/routes/saleRoutes.js";
 import branchRoutes from "./server/routes/branchRoutes.js";
-import "./server/utils/refreshDatabase.js";
 
 const app = express();
 const allowedOrigins = ["http://localhost:5173"];
