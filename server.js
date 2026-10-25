@@ -12,6 +12,8 @@ const app = express();
 const allowedOrigins = ["http://localhost:5173"];
 const allowedProductionOriginPrefix = "https://branch-management-system-";
 
+console.log("Node version:", process.version);
+
 app.use(
 	cors({
 		origin: function (origin, callback) {
